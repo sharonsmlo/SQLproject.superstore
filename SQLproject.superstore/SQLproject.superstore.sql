@@ -39,5 +39,3 @@ SELECT COUNT(DISTINCT r.order_id) AS total_returns,
        COUNT(DISTINCT r.order_id) * 100.0 / COUNT(DISTINCT o.order_id) AS return_rate_percentage
 FROM orders o
 LEFT JOIN returns r ON o.order_id = r.order_id;
-
-
